@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment{
-        BRANCH_VAR   = "DEV"
-        GIT_PATH    = "/var/jenkins_home/workspace/web-page-job/webpage_count"
+        BRANCH_VAR  = "DEV"
+        GIT_PATH    = "/var/jenkins_home/workspace/web-page-multibranch_dev/webpage_count"
     }
     stages {
         stage('Check') {
@@ -17,7 +17,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Build') {
             steps {
                 script {
