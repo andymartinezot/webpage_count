@@ -23,7 +23,7 @@ pipeline {
                 script {
                     sh """
                     echo "Runnign from Build stage"
-                    git clone https://github.com/andymartinezot/webpage_count.git
+                    git clone --branch dev --single-branch https://github.com/andymartinezot/webpage_count.git
                     """
                 }
             }
